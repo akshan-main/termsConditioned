@@ -11,7 +11,7 @@ This project investigates how a simple, calibrated clause-family classifier can 
 
 A fixed set of “attention-worthy” clause families (for example Waivers, Remedies, Indemnity, Governing Laws, Jurisdictions, Amendments) is defined, and a scalar attention score is constructed by summing calibrated probabilities over this bucket. A simple policy sweep over confidence thresholds selects a triage rule that keeps roughly 99.5 percent of clauses automated, while capping the rate of “attention-worthy but treated as low attention” errors.
 
-Slice tables over clause families, length and density buckets, and regex phrase flags (such as “sole discretion” or “governing law”) reveal where false reassurance is concentrated. Waivers, Remedies, and long, dense paragraphs drive most of the harm score, suggesting that these slices need additional safeguards in any deployment. A lightweight triage API produces paragraph-level review cards and a ranked queue for real Terms of Service text, demonstrating how calibrated scores and slice audits can support human-centered review of contract clauses.
+Slice tables over clause families, length and density buckets, and regex phrase flags (such as “sole discretion” or “governing law”) reveal where false reassurance is concentrated. Waivers, Remedies, and long, dense paragraphs drive most of the harm score, suggesting that these slices need additional safeguards in any deployment. A lightweight triage API produces paragraph-level review cards and a ranked queue for real Terms of Service text, demonstrating how calibrated scores and slice audits can support human-centered review of contract clauses and turn an otherwise black-box classifier into an auditable triage assistant.
 
 ---
 
